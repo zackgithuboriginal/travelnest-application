@@ -37,7 +37,7 @@ async function scrapePage(page, id) {
       .allTextContents();
 
     //Loops through the amenity lists to extract nested values,
-    //keep associated values together and pushes object with category heading to amenities array
+    //keeps associated values together and pushes object with category heading to amenities array
     for (let i = 0; i < listCount; i++) {
       let amenityItems = [];
 
@@ -77,7 +77,7 @@ async function scrapeApplication(idList) {
 
   for (let i = 0; i < idList.length; i++) {
     try {
-      //Extracted scraping logic to new function for separation of logic and ease of reading
+      //Extracted scraping logic to function for separation of logic and ease of reading
       outputArray.push(await scrapePage(page, idList[i]));
     } catch (err) {
       console.log(err);
