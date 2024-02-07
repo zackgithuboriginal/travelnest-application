@@ -1,0 +1,16 @@
+{
+  "name": "travelnest-application",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "node scraper.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "playwright": "^1.41.2"
+  }
+}
