@@ -59,8 +59,12 @@ async function scrapePage(page, id) {
     return {
       propertyName,
       propertyType,
-      bathroomCount: mappedAccommodationData["bathroom"],
-      bedroomCount: mappedAccommodationData["bedroom"],
+      bathroomCount:
+        mappedAccommodationData["bathroom"] ||
+        mappedAccommodationData["bathrooms"],
+      bedroomCount:
+        mappedAccommodationData["bedroom"] ||
+        mappedAccommodationData["bedrooms"],
       amenities,
     };
   } else {
